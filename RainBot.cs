@@ -15,7 +15,7 @@ namespace WeatherMonitoringApp
             _humidityThreshold = humidityThreshold;
         }
 
-        public override string? GetInfo(WeatherData weatherData)
+        public override string? GetInfo(IWeatherData weatherData)
         {
             if(_enabled && weatherData.Humidity > _humidityThreshold) 
                 return _message; 

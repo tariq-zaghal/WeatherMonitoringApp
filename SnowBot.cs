@@ -15,7 +15,7 @@ namespace WeatherMonitoringApp
             _temperatureThreshold = temperatureThreshold;
         }
 
-        public override string? GetInfo(WeatherData weatherData)
+        public override string? GetInfo(IWeatherData weatherData)
         {
             if(_enabled && weatherData.Temperature <  _temperatureThreshold)
                 return _message; 
