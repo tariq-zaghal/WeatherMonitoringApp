@@ -31,7 +31,7 @@ namespace WeatherMonitoringApp
             _weatherBots.Remove(weatherBot);
         }
 
-        public List<string?> NotifyBots(WeatherData weatherData)
+        public List<string?> NotifyBots(IWeatherData weatherData)
         {
             List<string?> NotificationFromBots = new List<string?>();
 
