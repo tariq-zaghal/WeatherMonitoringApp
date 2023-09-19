@@ -17,6 +17,6 @@ namespace WeatherMonitoringApp
             _message = message;
         }
 
-        public abstract string? GetInfo(WeatherData weatherData);
+        public abstract string? GetInfo(IWeatherData weatherData);
     }
 }
