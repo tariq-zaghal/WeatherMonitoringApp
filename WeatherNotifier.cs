@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeatherMonitoringApp.WeatherBotModels;
 
 namespace WeatherMonitoringApp
 {
@@ -16,9 +17,9 @@ namespace WeatherMonitoringApp
             _weatherBots = new List<WeatherBot>();
         }
 
-        public WeatherNotifier(List <WeatherBot> weatherBot)
+        public WeatherNotifier(BotConfigerationsProvider providedWeatherBots)
         {
-            _weatherBots = weatherBot;
+            _weatherBots = new List<WeatherBot> { providedWeatherBots.SnowBot, providedWeatherBots.SunBot, providedWeatherBots.RainBot};
         }
 
         public void AddWeatherBot(WeatherBot weatherBot)
