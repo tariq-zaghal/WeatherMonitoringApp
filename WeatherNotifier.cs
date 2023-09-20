@@ -12,24 +12,9 @@ namespace WeatherMonitoringApp
 
         private  List<WeatherBot> _weatherBots;
 
-        public WeatherNotifier()
-        {
-            _weatherBots = new List<WeatherBot>();
-        }
-
         public WeatherNotifier(BotConfigerationsProvider providedWeatherBots)
         {
             _weatherBots = new List<WeatherBot> { providedWeatherBots.SnowBot, providedWeatherBots.SunBot, providedWeatherBots.RainBot};
-        }
-
-        public void AddWeatherBot(WeatherBot weatherBot)
-        {
-            _weatherBots.Add(weatherBot);
-        }
-
-        public void RemoveWeatherBot(WeatherBot weatherBot)
-        {
-            _weatherBots.Remove(weatherBot);
         }
 
         public List<string?> NotifyBots(IWeatherData weatherData)
