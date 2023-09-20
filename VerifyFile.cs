@@ -8,7 +8,7 @@ namespace WeatherMonitoringApp
 {
     internal class VerifyFile
     {
-        public bool FileExits(string filePath)
+        public static bool FileExits(string filePath)
         {
             if (File.Exists(filePath))
                 return true;
