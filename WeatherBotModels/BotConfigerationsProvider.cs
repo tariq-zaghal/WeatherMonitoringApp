@@ -13,7 +13,7 @@ namespace WeatherMonitoringApp.WeatherBotModels
         public SunBot SunBot { get; set; }
         public SnowBot SnowBot { get; set; }
 
-        public static BotConfigerationsProvider provide(string fileContent)
+        public static BotConfigerationsProvider ProvideWeatherBots(string fileContent)
         {
             return JsonConvert.DeserializeObject<BotConfigerationsProvider>(fileContent);
         }
