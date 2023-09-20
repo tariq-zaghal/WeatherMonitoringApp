@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherMonitoringApp
+namespace WeatherMonitoringApp.WeatherBotModels
 {
     public class SnowBot : WeatherBot
     {
@@ -17,9 +17,9 @@ namespace WeatherMonitoringApp
 
         public override string? GetInfo(IWeatherData weatherData)
         {
-            if(_enabled && weatherData.Temperature <  _temperatureThreshold)
-                return _message; 
-            
+            if (_enabled && weatherData.Temperature < _temperatureThreshold)
+                return _message;
+
             return null;
         }
     }

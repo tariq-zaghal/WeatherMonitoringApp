@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherMonitoringApp
+namespace WeatherMonitoringApp.WeatherBotModels
 {
-    public class RainBot: WeatherBot
+    public class RainBot : WeatherBot
     {
         private decimal _humidityThreshold;
 
@@ -17,9 +17,9 @@ namespace WeatherMonitoringApp
 
         public override string? GetInfo(IWeatherData weatherData)
         {
-            if(_enabled && weatherData.Humidity > _humidityThreshold) 
-                return _message; 
-            
+            if (_enabled && weatherData.Humidity > _humidityThreshold)
+                return _message;
+
             return null;
         }
     }
