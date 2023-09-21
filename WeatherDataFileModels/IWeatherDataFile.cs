@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeatherMonitoringApp.WeatherDataModels;
 
-namespace WeatherMonitoringApp
+namespace WeatherMonitoringApp.WeatherDataFileModels
 {
     public interface IWeatherDataFile
     {
-        public IWeatherData? ConvertToData(string fileContent);
+        public IWeatherData? ConvertToWeatherData();
     }
 }
