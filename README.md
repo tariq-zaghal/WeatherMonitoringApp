@@ -1,6 +1,8 @@
 # WeatherMonitoringApp :sunny:	:partly_sunny:	:sun_behind_rain_cloud:	
 This is a console [C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/) project that I have completed while on an internship with FootHill Technologies.
 
+The goal of this project is to practice Clean Code and Design patterns.
+
 The project acts as a backend for an actual app that takes in weather data and then provides clearer information about the weather via console.
 
 ## Introduction
