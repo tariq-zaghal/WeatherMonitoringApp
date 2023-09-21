@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WeatherMonitoringApp.WeatherBotModels;
+using WeatherMonitoringApp.WeatherDataModels;
 
-namespace WeatherMonitoringApp
+namespace WeatherMonitoringApp.WeatherNotifierModels
 {
     public class WeatherNotifier
     {
 
-        private  List<WeatherBot> _weatherBots;
+        private List<WeatherBot> _weatherBots;
 
         public WeatherNotifier(BotConfigerationsProvider providedWeatherBots)
         {
-            _weatherBots = new List<WeatherBot> { providedWeatherBots.SnowBot, providedWeatherBots.SunBot, providedWeatherBots.RainBot};
+            _weatherBots = new List<WeatherBot> { providedWeatherBots.SnowBot, providedWeatherBots.SunBot, providedWeatherBots.RainBot };
         }
 
         public List<string?> NotifyBots(IWeatherData weatherData)
