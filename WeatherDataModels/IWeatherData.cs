@@ -1,4 +1,4 @@
-﻿namespace WeatherMonitoringApp
+﻿namespace WeatherMonitoringApp.WeatherDataModels
 {
     public interface IWeatherData
     {
