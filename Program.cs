@@ -3,6 +3,7 @@ using System.IO;
 using WeatherMonitoringApp.ConsoleLoggingModels;
 using WeatherMonitoringApp.WeatherBotModels;
 using WeatherMonitoringApp.WeatherDataFileModels;
+using WeatherMonitoringApp.WeatherDataModels;
 
 namespace WeatherMonitoringApp
 {

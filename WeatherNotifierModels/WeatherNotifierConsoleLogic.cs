@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WeatherMonitoringApp.WeatherBotModels;
+using WeatherMonitoringApp.WeatherDataModels;
+using WeatherMonitoringApp.WeatherNotifierModels;
 
 namespace WeatherMonitoringApp
 {
