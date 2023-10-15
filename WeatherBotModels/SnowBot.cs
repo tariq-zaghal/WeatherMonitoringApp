@@ -7,16 +7,20 @@ using WeatherMonitoringApp.WeatherDataModels;
 
 namespace WeatherMonitoringApp.WeatherBotModels
 {
-    public class SnowBot : WeatherBot
+    public class SnowBot : WeatherBot,IWeatherBot
     {
         private decimal _temperatureThreshold;
+
+        public SnowBot() : base(true, "message")
+        {
+        }
 
         public SnowBot(bool enabled, string message, decimal temperatureThreshold) : base(enabled, message)
         {
             _temperatureThreshold = temperatureThreshold;
         }
 
-        public override string? GetInfo(IWeatherData weatherData)
+        public virtual string? GetInfo(IWeatherData weatherData)
         {
             if (_enabled && weatherData.Temperature < _temperatureThreshold)
                 return _message;
