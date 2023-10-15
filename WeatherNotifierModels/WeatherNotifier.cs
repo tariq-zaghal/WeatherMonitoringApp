@@ -11,11 +11,11 @@ namespace WeatherMonitoringApp.WeatherNotifierModels
     public class WeatherNotifier
     {
 
-        private List<WeatherBot> _weatherBots;
+        private List<IWeatherBot> _weatherBots;
 
-        public WeatherNotifier(BotConfigerationsProvider providedWeatherBots)
+        public WeatherNotifier(IBotConfigerationsProvider providedWeatherBots)
         {
-            _weatherBots = new List<WeatherBot> { providedWeatherBots.SnowBot, providedWeatherBots.SunBot, providedWeatherBots.RainBot };
+            _weatherBots = new List<IWeatherBot> { providedWeatherBots.SnowBot, providedWeatherBots.SunBot, providedWeatherBots.RainBot };
         }
 
         public List<string?> NotifyBots(IWeatherData weatherData)
