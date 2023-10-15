@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WeatherMonitoringApp.WeatherBotModels
 {
-    public class BotConfigerationsProvider
+    public class BotConfigerationsProvider : IBotConfigerationsProvider
     {
         public RainBot RainBot { get; set; }
         public SunBot SunBot { get; set; }
