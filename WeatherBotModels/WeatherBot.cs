@@ -18,6 +18,6 @@ namespace WeatherMonitoringApp.WeatherBotModels
             _message = message;
         }
 
-        public abstract string? GetInfo(IWeatherData weatherData);
+        //public abstract string? GetInfo(IWeatherData weatherData);
     }
 }
