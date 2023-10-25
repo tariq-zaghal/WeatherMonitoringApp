@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherMonitoringApp
+namespace WeatherMonitoringApp.WeatherDataModels
 {
-    public class WeatherData
+    public class WeatherData : IWeatherData
     {
         public string Location { get; set; }
         public decimal Temperature { get; set; }

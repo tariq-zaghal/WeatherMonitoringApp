@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeatherMonitoringApp.WeatherDataModels;
 
-namespace WeatherMonitoringApp
+namespace WeatherMonitoringApp.WeatherBotModels
 {
     public abstract class WeatherBot
     {
@@ -17,6 +18,6 @@ namespace WeatherMonitoringApp
             _message = message;
         }
 
-        public abstract string? GetInfo(WeatherData weatherData);
+        //public abstract string? GetInfo(IWeatherData weatherData);
     }
 }
